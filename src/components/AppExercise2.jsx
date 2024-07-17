@@ -39,15 +39,17 @@ function App() {
   // Hint: [{user1}, {user2}, {user3}] => [<UserCard />, <UserCard />, <UserCard />]
 
   return (
-    <div className="container">
-      <h1>Users</h1>
+    <Theme>
+      <div className="container">
+        <h1>Users</h1>
 
-      {/* Step 5: Use curly bracket to put the user cards */}
-      {/* Step 6: Update UserCard component to receive a user prop => (Go to UserCard.jsx)*/}
-      <UserCard user={mockUser} />
-      <UserCard user={mockUser} />
-      <UserCard user={mockUser} />
-    </div>
+        {/* Step 5: Use curly bracket to put the user cards */}
+        {/* Step 6: Update UserCard component to receive a user prop => (Go to UserCard.jsx)*/}
+        <UserCard user={mockUser} />
+        <UserCard user={mockUser} />
+        <UserCard user={mockUser} />
+      </div>
+    </Theme>
   );
 }
 
