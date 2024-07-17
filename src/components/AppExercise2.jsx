@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
+import { Theme } from "@radix-ui/themes";
+import "@radix-ui/themes/styles.css";
 import UserCard from "./UserCard";
 
 function App() {
   // Step 1: Create a state named users and set empty array as default value
+  const [users, setUsers] = useState([]);
 
   useEffect(() => {
     const fetchAPI = async () => {
