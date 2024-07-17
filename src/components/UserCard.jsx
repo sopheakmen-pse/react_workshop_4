@@ -9,16 +9,16 @@ function UserCard(props) {
           <Avatar size="3" radius="full" fallback="T" color="indigo" />
           <Box>
             <Text as="div" size="2" weight="bold">
-              Name: Teodros Girmay
+              Name: {props.user.name}
             </Text>
             <Text as="div" size="2" color="gray">
-              Company: Wiresk
+              Company: {props.user.company.name}
             </Text>
             <Text as="div" size="2" color="gray">
-              Email: test@test.com
+              Email: {props.user.email}
             </Text>
             <Text as="div" size="2" color="gray">
-              Phone: +1 123 456 7890
+              Phone: {props.user.phone}
             </Text>
           </Box>
         </Flex>
